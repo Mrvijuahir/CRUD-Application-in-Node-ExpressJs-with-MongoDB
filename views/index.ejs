@@ -1,0 +1,38 @@
+<!-- including header -->
+
+<%- include('include/header')%>
+
+<!-- Main Section -->
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nave d-flex justify-between">
+            <a href="/add-user" >
+            <span class="user">New User <i class="fas fa-user"></i></span>
+            </a>
+        </div>
+        <!-- form -->
+        <form action="/" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%- include('include/show')%>
+            </tbody>
+        </table>
+        </form>
+       
+    </div>
+</main>
+
+<!-- including footer -->
+
+<%- include('include/footer')%>
